@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/shared/desktop/logo.svg";
 import {Link} from "react-router-dom";
-import SocialMedia from "../SocialMedia";
+// import SocialMedia from "../SocialMedia";
 
 function Footer(){
     return(
@@ -28,13 +28,13 @@ function Footer(){
                         and sound specialists who are devoted to helping you get the most out of personal audio. Come and
                         visit our demo facility - we’re open 7 days a week.
                     </p>
-                    <SocialMedia/>
+                    {/* <SocialMedia/> */}
                 </article>
                 <article>
                     <aside>
                         <p>Copyright 2021. All Rights Reserved</p>
                     </aside>
-                    <SocialMedia/>
+                    {/* <SocialMedia/> */}
                 </article>
             </section>
         </footer>
