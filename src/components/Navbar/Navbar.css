@@ -66,3 +66,21 @@
     transition: var(--transition);
     text-decoration: none;
   }
+
+
+  .navLinksContainer a:hover {
+    transition: var(--transition);
+    color: var(--orange-background);
+  }
+  .nav-logo {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bars {
+    display: none;
+  }
+  
