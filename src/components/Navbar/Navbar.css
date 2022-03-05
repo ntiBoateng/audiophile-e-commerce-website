@@ -84,3 +84,25 @@
     display: none;
   }
   
+
+  .bars span {
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px 0;
+    background-color: var(--white-background);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .mobileNavLinks {
+    position: absolute;
+    top: -10090px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--white-background);
+    transition: var(--transition);
+    opacity: 0;
+    overflow: visible !important;
+  }
