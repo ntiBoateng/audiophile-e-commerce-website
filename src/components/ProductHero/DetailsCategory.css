@@ -132,4 +132,14 @@
     .category-container {
       height: 724px;
     }
-}
+
+
+    .category-img {
+        height: 352px;
+      }
+      .category-info H1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+      }
+    }
+       
