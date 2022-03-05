@@ -43,4 +43,15 @@
     align-items: center;
     position: relative;
   }
+
+
+  .nav-active {
+    border-bottom: 1px solid #bebbbb;
+  }
+  
+  .navLinksContainer {
+    width: 429px;
+    display: flex;
+    justify-content: space-between;
+  }
   
