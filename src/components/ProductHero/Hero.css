@@ -1,0 +1,21 @@
+.black-background {
+    margin-top: 94px;
+    background: var(--black-background);
+    padding: 98px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+  
+  .black-background {
+    overflow: hidden;
+  }
+  
+  h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+  }
