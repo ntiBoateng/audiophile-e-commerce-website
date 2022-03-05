@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import { useGlobalContext } from "../../context";
 
-function ProductInfo({Product}){
-    const { image, new: newProduct, name, description, price, slug } = Products;
-    const { getWidth, setCartInfo, CartInfo } = useGlobalContext();
-  
-    const [QuantityValue, setQuantityValue] = useState(1);
-  
-    const addToCart = () => {
-      const newItem = { price, image, name, slug, quantity: QuantityValue };
-  
-      let newItems = CartInfo.find((item) => item.slug === slug);
-      if (newItems) {
-        const newQuantity = newItems.quantity + QuantityValue;
-        const newQuantityItem = { ...newItems, quantity: newQuantity };
-        //i just wrote this, i havent understnd how it works
-        setCartInfo(() => {
-          return CartInfo.map((x) => (x.slug === slug ? newQuantityItem : x));
-        });
-      } else {
-        setCartInfo([...CartInfo, newItem]);
-      }
-    };
+function ProductInfo({ Products }) {
+  const { image, new: newProduct, name, description, price, slug } = Products;
+  const { getWidth, setCartInfo, CartInfo } = useGlobalContext();
 
-    return(
-<section className="productCart">
+  const [QuantityValue, setQuantityValue] = useState(1);
+
+  const addToCart = () => {
+    const newItem = { price, image, name, slug, quantity: QuantityValue };
+
+    let newItems = CartInfo.find((item) => item.slug === slug);
+    if (newItems) {
+      const newQuantity = newItems.quantity + QuantityValue;
+      const newQuantityItem = { ...newItems, quantity: newQuantity };
+      //i just wrote this, i havent understnd how it works
+      setCartInfo(() => {
+        return CartInfo.map((x) => (x.slug === slug ? newQuantityItem : x));
+      });
+    } else {
+      setCartInfo([...CartInfo, newItem]);
+    }
+  };
+
+  return (
+    <section className="productCart">
       <div className="productCart-container contain">
         <div data-aos="fade-right" className="productImg">
           <img
@@ -85,7 +85,8 @@ function ProductInfo({Product}){
           </div>
         </div>
       </div>
-    </section>    )
+    </section>
+  );
 }
 
 export default ProductInfo;
