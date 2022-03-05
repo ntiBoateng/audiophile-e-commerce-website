@@ -1,0 +1,19 @@
+.category {
+    width: 100%;
+    height: auto;
+    margin: 160px 0;
+  }
+  
+  .category-container {
+    max-width: 1400px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 560px;
+  }
+  
+  .category-container-inverse {
+    flex-direction: row-reverse;
+    height: 303px;
+  }
