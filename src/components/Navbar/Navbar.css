@@ -23,3 +23,11 @@
     justify-content: flex-start;
     align-items: center;
   }
+
+
+  .show-cart-container {
+    top: 126px;
+    opacity: 1;
+    transition: var(--transition);
+  }
+  
