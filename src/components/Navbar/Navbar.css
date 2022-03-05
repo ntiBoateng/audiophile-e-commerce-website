@@ -31,3 +31,16 @@
     transition: var(--transition);
   }
   
+
+  .nav-center {
+    max-width: 1400px;
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    padding: 32px 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
