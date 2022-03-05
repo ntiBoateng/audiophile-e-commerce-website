@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
   }
-
+  
   .cart-container {
     background-color: white;
     padding: 31px;
@@ -23,15 +23,13 @@
     justify-content: flex-start;
     align-items: center;
   }
-
-
+  
   .show-cart-container {
     top: 126px;
     opacity: 1;
     transition: var(--transition);
   }
   
-
   .nav-center {
     max-width: 1400px;
     width: 95vw;
@@ -43,8 +41,7 @@
     align-items: center;
     position: relative;
   }
-
-
+  
   .nav-active {
     border-bottom: 1px solid #bebbbb;
   }
@@ -55,7 +52,6 @@
     justify-content: space-between;
   }
   
-
   .navLinksContainer a {
     color: var(--white-color);
     text-decoration: none;
@@ -66,8 +62,6 @@
     transition: var(--transition);
     text-decoration: none;
   }
-
-
   .navLinksContainer a:hover {
     transition: var(--transition);
     color: var(--orange-background);
@@ -84,7 +78,6 @@
     display: none;
   }
   
-
   .bars span {
     width: 20px;
     height: 3px;
@@ -106,8 +99,7 @@
     opacity: 0;
     overflow: visible !important;
   }
-
-
+  
   .shownavs {
     top: 95px;
     opacity: 1;
@@ -118,8 +110,6 @@
     position: relative;
     height: 100%;
   }
-
-
   .cart .amount {
     position: absolute;
     padding: 5px;
@@ -139,7 +129,6 @@
     cursor: pointer;
   }
   
-
   .bars.is-active span:nth-child(2) {
     opacity: 0;
   }
@@ -149,8 +138,7 @@
   .bars.is-active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
-
+  
   @media screen and (min-width: 600px) {
     .mobileNavLinks {
       display: flex;
@@ -172,3 +160,39 @@
       display: flex;
       justify-content: flex-end;
     }
+    .nav-logo {
+      flex-basis: 40%;
+    }
+    .cart .amount {
+      height: 20px;
+      width: 20px;
+      right: -10%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cart {
+      flex-basis: 10%;
+    }
+    .nav-logo {
+      flex-basis: 65%;
+    }
+    .cart .amount {
+      top: -70%;
+      right: 0;
+      height: 20px;
+      width: 20px;
+    }
+    .cart-container {
+      width: 100%;
+      padding: 31px 15px;
+      padding: 31px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .nav-logo {
+      flex-basis: 70%;
+    }
+  }
+  
