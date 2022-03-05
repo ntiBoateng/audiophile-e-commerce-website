@@ -7,3 +7,19 @@
     top: 0;
     left: 0;
   }
+
+  .cart-container {
+    background-color: white;
+    padding: 31px;
+    position: absolute;
+    width: 377px;
+    top: -100000%;
+    transition: var(--transition);
+    opacity: 0;
+    z-index: 999;
+    right: 0;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
