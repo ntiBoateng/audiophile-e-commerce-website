@@ -106,3 +106,15 @@
     opacity: 0;
     overflow: visible !important;
   }
+
+
+  .shownavs {
+    top: 95px;
+    opacity: 1;
+    transition: var(--transition);
+  }
+  
+  .cart {
+    position: relative;
+    height: 100%;
+  }
