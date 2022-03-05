@@ -118,3 +118,24 @@
     position: relative;
     height: 100%;
   }
+
+
+  .cart .amount {
+    position: absolute;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    top: -50%;
+    right: -50%;
+    z-index: 1;
+    background: var(--orange-background);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
