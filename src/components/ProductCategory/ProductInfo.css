@@ -77,3 +77,74 @@
     width: 100%;
     align-items: flex-start;
   }
+
+
+  .counter {
+    display: flex;
+    height: 100%;
+    width: 120px;
+    justify-content: center;
+    margin-right: 16px;
+    background: #f1f1f1;
+  }
+  .counter button:hover {
+    color: var(--orange-background);
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .counter input {
+    text-align: center;
+  }
+  .btn-counter {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .counter p {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+    color: #fff;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: var(--orange-background);
+  }
+  
+  .button:hover {
+    background-color: var(--orange-background-hover);
+  }
+  
+  @media screen and (max-width: 682px) {
+    .productCart-container {
+      grid-template-columns: 1fr;
+    }
+    .productImg {
+      height: 500px;
+    }
+    .isNew {
+      margin-top: 30px;
+    }
+  }
