@@ -17,9 +17,7 @@
     flex-direction: row-reverse;
     height: 303px;
   }
-
-
-
+  
   .category-container-inverse .category-info {
     margin: 0;
     margin-right: 125px;
@@ -79,9 +77,8 @@
     object-fit: cover;
     object-position: center;
   }
-
   
-.orange-background {
+  .orange-background {
     background: var(--orange-background);
     color: var(--white-color) !important;
     transition: var(--transition);
@@ -132,14 +129,13 @@
     .category-container {
       height: 724px;
     }
-
-
+    
     .category-img {
-        height: 352px;
-      }
-      .category-info H1 {
-        font-size: 28px;
-        letter-spacing: 1px;
-      }
+      height: 352px;
     }
-       
+    .category-info H1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+  }
+  
