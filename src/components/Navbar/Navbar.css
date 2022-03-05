@@ -149,3 +149,26 @@
   .bars.is-active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+
+  @media screen and (min-width: 600px) {
+    .mobileNavLinks {
+      display: flex;
+      padding: 67px 40px;
+    }
+    .mobileNavLinks a:nth-child(2) {
+      margin: 0 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bars {
+      display: block;
+    }
+    .navLinksContainer {
+      display: none;
+    }
+    .cart {
+      flex-basis: 10%;
+      display: flex;
+      justify-content: flex-end;
+    }
