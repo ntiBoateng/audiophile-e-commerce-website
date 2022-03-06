@@ -50,4 +50,18 @@
       object-fit: cover;
   }
 
-  
+@media screen and (max-width: 600px){
+    .like {
+        margin-bottom: var(--margin-buttom--mobile);
+    }
+    .img-container{
+        height: 120px;
+    }
+    .like-container-info{
+        grid-template-columns: 1fr;
+    }
+    .like-container h2{
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+}
