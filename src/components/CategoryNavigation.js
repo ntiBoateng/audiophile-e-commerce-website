@@ -1,37 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import headphone from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import arrow from "../assets/shared/desktop/icon-arrow-right.svg";
+import speaker from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
 function CategoryNavigation(){
     return(
-        <section>
-            <section>
-                <Link>
-                    <div>
-                        <div>
-                            <img/>
+        <section className="products">
+            <section className="product-container">
+                <Link data-aos="fade-right"
+                className="HomeCategoryContainer"
+                to="/headphones">
+                    <div className="homeimage">
+                        <div className="img-home">
+                            <img src={headphone} alt="HeadPhone"/>
                         </div>
                     </div>
-                    <div>
+                    <div className="homeCategoryInfo">
                         <h3>HeadPhones</h3>
-                        <div>
+                        <div className="mobileCategorySection">
                             <p>
                                 Shop now
                                 <span>
-                                    <img/>
+                                    <img src={arrow} alt="arrow-right"/>
                                 </span>
                             </p>
                         </div>
                     </div>
                 </Link>
-                <Link>
-                    <div>
-                        <div>
-                            <img/>
+                <Link
+                    data-aos="fade-up"
+                    className="HomeCategoryContainer"
+                    to="/speakers">
+                    <div className="homeimage">
+                        <div className="img-home">
+                            <img src={speaker} alt="Speaker"/>
                         </div>
                     </div>
-                    <div>
+                    <div className="homeCategoryInfo">
                         <h3>Speakers</h3>
-                        <div>
+                        <div className="mobileCategorySection">
                             <p>
                                 Shop now
                                 <span>
