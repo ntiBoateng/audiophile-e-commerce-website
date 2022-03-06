@@ -12,9 +12,10 @@ function CategoryNavigation(){
                         </div>
                     </div>
                     <div>
-                        <h3></h3>
+                        <h3>HeadPhones</h3>
                         <div>
                             <p>
+                                Shop now
                                 <span>
                                     <img/>
                                 </span>
@@ -29,9 +30,10 @@ function CategoryNavigation(){
                         </div>
                     </div>
                     <div>
-                        <h3></h3>
+                        <h3>Speakers</h3>
                         <div>
                             <p>
+                                Shop now
                                 <span>
                                     <img/>
                                 </span>
@@ -46,9 +48,10 @@ function CategoryNavigation(){
                         </div>
                     </div>
                     <div>
-                        <h3></h3>
+                        <h3>EarPhones</h3>
                         <div>
                             <p>
+                                Shop now
                                 <span>
                                     <img/>
                                 </span>
