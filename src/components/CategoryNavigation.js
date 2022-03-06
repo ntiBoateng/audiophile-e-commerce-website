@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CategoryNavigation(){
     return(
-        <sectio>
+        <section>
             <section>
                 <Link>
                     <div>
@@ -57,7 +57,7 @@ function CategoryNavigation(){
                     </div>
                 </Link>
             </section>
-        </sectio>
+        </section>
     );
 }
 
