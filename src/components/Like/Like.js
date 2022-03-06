@@ -8,7 +8,7 @@ function Like({Products}){
     return(
         <section>
             <div>
-                <h2></h2>
+                <h2>YOU MAY ALSO LIKE</h2>
                 <div>
                     {others.map((other, index) => {
                         const {image, name, slug} = other;
@@ -18,7 +18,7 @@ function Like({Products}){
                                     <img/>
                                 </div>
                                 <h3></h3>
-                                <Link></Link>
+                                <Link>SEE PRODUCT</Link>
                             </article>
                         );
                     })}
