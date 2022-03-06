@@ -6,14 +6,18 @@ function Like({Products}){
     const {others, category} = Products;
     const {getWidth} = useGlobalContext();
     return(
-        <section>
-            <div>
-                <h2>YOU MAY ALSO LIKE</h2>
-                <div>
+        <section className="like">
+            <div className="like-container contain">
+                <h2 data-aos="fade-right">YOU MAY ALSO LIKE</h2>
+                <div data-aos="fade-up" className="like-container-info">
                     {others.map((other, index) => {
                         const {image, name, slug} = other;
                         return (
-                            <article>
+                            <article data-aos={`${
+                                index === 0? "fade-right": index === 1? "fade-up" : "fade-left"}`}
+                                data-aos-delay="200"
+                                className="likeInfo"
+                                key={index}>
                                 <div>
                                     <img/>
                                 </div>
