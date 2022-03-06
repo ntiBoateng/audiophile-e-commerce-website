@@ -1,0 +1,5 @@
+.like{
+    margin-bottom: var(--margin-buttom);
+    width: 100%;
+    overflow: hidden;
+}
