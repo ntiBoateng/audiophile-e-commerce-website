@@ -18,11 +18,17 @@ function Like({Products}){
                                 data-aos-delay="200"
                                 className="likeInfo"
                                 key={index}>
-                                <div>
-                                    <img/>
+                                <div className="img-container">
+                                    <img src={
+                                        getWidth < 600
+                                        ? image.mobile
+                                        : getWidth > 600 && getWidth <= 768
+                                        ? image.tablet
+                                        : image.desktop
+                                    } alt={name}/>
                                 </div>
-                                <h3></h3>
-                                <Link>SEE PRODUCT</Link>
+                                <h3>{name}</h3>
+                                <Link className="btns orange-background" to={`/${category}/${slug}`}>SEE PRODUCT</Link>
                             </article>
                         );
                     })}
