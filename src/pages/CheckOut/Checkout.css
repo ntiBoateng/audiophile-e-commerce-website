@@ -152,4 +152,51 @@
     letter-spacing: 0.93px;
     margin-bottom: 16px;
   }
+
+  .checkForms {
+    background-color: #ffffff;
+    padding: 54px 48px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    margin-right: 2rem;
+    flex-basis: 70%;
+  }
+  
+  .special {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .summary {
+    flex-basis: 30%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  .summary-container {
+    padding: 32px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .cal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .grand {
+    margin: 24px 0 32px 0;
+  }
+  
+  .cal p {
+    font-weight: 400 !important;
+  }
+  
+  .cal h4 {
+    font-size: 18px;
+    line-height: 24.59px;
+    font-weight: 700;
+  }
   
