@@ -1,11 +1,9 @@
 import React from "react";
 
-
-function BestGear(){
-
-return (
+function BestGear() {
+  return (
     <section className="bringing">
-<section className="bring-container">
+      <section className="bring-container">
         <aside data-aos="fade-in" className="bring-info">
           <h2>
             Bringing you the <span>best</span> audio gear
@@ -21,16 +19,8 @@ return (
         </aside>
         <aside data-aos="fade-up" className="bring-img"></aside>
       </section>
-
     </section>
-)
-    
+  );
 }
-
-
-
-
-
-
 
 export default BestGear;
