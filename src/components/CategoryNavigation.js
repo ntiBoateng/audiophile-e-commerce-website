@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import headphone from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import arrow from "../assets/shared/desktop/icon-arrow-right.svg";
 import speaker from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphone from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
+
 function CategoryNavigation(){
     return(
         <section className="products">
@@ -42,25 +44,28 @@ function CategoryNavigation(){
                             <p>
                                 Shop now
                                 <span>
-                                    <img/>
+                                    <img src={arrow} alt="arrow-right"/>
                                 </span>
                             </p>
                         </div>
                     </div>
                 </Link>
-                <Link>
-                    <div>
-                        <div>
-                            <img/>
+                <Link
+                    data-aos="fade-up"
+                    className="HomeCategoryContainer"
+                    to="/earphones">
+                    <div className="homeimage">
+                        <div className="img-home">
+                            <img src={earphone} alt="EarPhones"/>
                         </div>
                     </div>
-                    <div>
+                    <div className="homeCateoryInfo">
                         <h3>EarPhones</h3>
                         <div>
                             <p>
                                 Shop now
                                 <span>
-                                    <img/>
+                                    <img src={arrow} alt="arrow-right"/>
                                 </span>
                             </p>
                         </div>
