@@ -10,7 +10,18 @@ function Like({Products}){
             <div>
                 <h2></h2>
                 <div>
-                    
+                    {others.map((other, index) => {
+                        const {image, name, slug} = other;
+                        return (
+                            <article>
+                                <div>
+                                    <img/>
+                                </div>
+                                <h3></h3>
+                                <Link></Link>
+                            </article>
+                        );
+                    })}
                 </div>
             </div>
         </section>
