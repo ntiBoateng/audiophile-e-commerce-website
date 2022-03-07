@@ -11,29 +11,26 @@ import Error from "./components/Error";
 import ScrollToTop from "./ScrollToTop";
 import Checkout from "./pages/CheckOut/Checkout";
 
-
-
 function App() {
-    return (
-      <>
-        <Navbar />
-        <ScrollToTop />
-        <Overlay />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/speakers" component={Speaker} />
-          <Route exact path="/speakers/:slug" component={SingleProduct} />
-          <Route exact path="/earphones" component={EarPhone} />
-          <Route exact path="/earphones/:slug" component={SingleProduct} />
-          <Route exact path="/headphones" component={HeadPhone} />
-          <Route exact path="/checkout" component={Checkout} />
-          <Route exact path="/headphones/:slug" component={SingleProduct} />
-          <Route component={Error} />
-        </Switch>
-        <Footer />
-      </>
-    );
-  }
+  return (
+    <>
+      <Navbar />
+      <ScrollToTop />
+      <Overlay />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/speakers" component={Speaker} />
+        <Route exact path="/speakers/:slug" component={SingleProduct} />
+        <Route exact path="/earphones" component={EarPhone} />
+        <Route exact path="/earphones/:slug" component={SingleProduct} />
+        <Route exact path="/headphones" component={HeadPhone} />
+        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/headphones/:slug" component={SingleProduct} />
+        <Route component={Error} />
+      </Switch>
+      <Footer />
+    </>
+  );
+}
 
-
-  export default App;
+export default App;
