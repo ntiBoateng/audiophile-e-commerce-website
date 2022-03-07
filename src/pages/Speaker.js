@@ -24,6 +24,24 @@ function Speaker(){
         info={info}
         url={url}
         image={
+
+            getWidth <= 600
+            ? image.mobile
+            : getWidth > 600 || getWidth <= 768
+            ? image.tablet
+            : image.desktop
+        }
+        key={index}
+      >
+        <Link to={`/speakers/${slug}`} className="btns orange-background">
+          SEE PRODUCT
+        </Link>
+      </DetailsCategory>
+    );
+  })}
+  <CategoryNavigation />
+  <BestGear />
+</>
     )
 }
 
