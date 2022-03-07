@@ -6,10 +6,10 @@ import CategoryNavigation from "../../components/CategoryNavigation";
 function Home(){
     return(
         <>
-            <section>
-                <section>
-                    <section>
-                        <h4>NEW PRODUCT</h4>
+            <section className="section-home">
+                <section className="home-container">
+                    <section className="home-container-info">
+                        <h4 data-aos="fade-left" data-aos-delay="200">NEW PRODUCT</h4>
                         <h1>
                             XX99 MARK II
                             <br />
