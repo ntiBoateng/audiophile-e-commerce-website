@@ -1,0 +1,16 @@
+.section-home {
+    width: 100%;
+    height: auto;
+    background-image: url(../../assets/home/desktop/image-hero.jpg);
+    background-position: center;
+    overflow: hidden;
+  }
+  .home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+    width: 95vw;
+    padding: 225px 0 158px 0;
+    display: flex;
+    align-items: flex-start;
+  }
