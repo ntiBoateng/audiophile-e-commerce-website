@@ -6,3 +6,10 @@ import { category } from "../dataCategory";
 import CategoryNavigation from "../components/CategoryNavigation";
 import BestGear from "../components/BestGear";
 import { useGlobalContext } from "../context";
+
+function Speaker(){
+
+    return
+}
+
+export default Speaker;
