@@ -7,42 +7,47 @@ import CategoryNavigation from "../components/CategoryNavigation";
 import BestGear from "../components/BestGear";
 import { useGlobalContext } from "../context";
 
-function Speaker(){
-    <Hero hero="black-background" title="Speakers"></Hero>
-    {speakers.map((speaker, index) => {
-      const { newProduct, name, slug, info, url, image } = speaker;
-     
-    return(
-        <DetailsCategory
-        classInfo={`${
-          index % 2 === 1
-            ? "category-container category-container-inverse"
-            : "category-container"
-        }`}
-        newProduct={newProduct}
-        name={name}
-        info={info}
-        url={url}
-        image={
+function Speaker() {
+  //getting only headphone from category
+  const { speakers } = category;
 
-            getWidth <= 600
-            ? image.mobile
-            : getWidth > 600 || getWidth <= 768
-            ? image.tablet
-            : image.desktop
-        }
-        key={index}
-      >
-        <Link to={`/speakers/${slug}`} className="btns orange-background">
-          SEE PRODUCT
-        </Link>
-      </DetailsCategory>
-    );
-  })}
-  <CategoryNavigation />
-  <BestGear />
-</>
-    )
+  const { getWidth } = useGlobalContext();
+
+  return (
+    <>
+      <Hero hero="black-background" title="Speakers"></Hero>
+      {speakers.map((speaker, index) => {
+        const { newProduct, name, slug, info, url, image } = speaker;
+        return (
+          <DetailsCategory
+            classInfo={`${
+              index % 2 === 1
+                ? "category-container category-container-inverse"
+                : "category-container"
+            }`}
+            newProduct={newProduct}
+            name={name}
+            info={info}
+            url={url}
+            image={
+              getWidth <= 600
+                ? image.mobile
+                : getWidth > 600 || getWidth <= 768
+                ? image.tablet
+                : image.desktop
+            }
+            key={index}
+          >
+            <Link to={`/speakers/${slug}`} className="btns orange-background">
+              SEE PRODUCT
+            </Link>
+          </DetailsCategory>
+        );
+      })}
+      <CategoryNavigation />
+      <BestGear />
+    </>
+  );
 }
 
 export default Speaker;
