@@ -8,7 +8,10 @@ import BestGear from "../components/BestGear";
 import { useGlobalContext } from "../context";
 
 function Speaker(){
-
+    <Hero hero="black-background" title="Speakers"></Hero>
+    {speakers.map((speaker, index) => {
+      const { newProduct, name, slug, info, url, image } = speaker;
+     
     return
 }
 
