@@ -1,1 +1,12 @@
-
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import Overlay from "./components/Overlay";
+import { Route, Switch } from "react-router-dom";
+import SingleProduct from "./pages/SingleProduct/SingleProducts";
+import EarPhone from "./pages/EarPhone";
+import HeadPhone from "./pages/HeadPhone";
+import Speaker from "./pages/Speaker";
+import Error from "./components/Error";
+import ScrollToTop from "./ScrollToTop";
+import Checkout from "./pages/CheckOut/Checkout";
