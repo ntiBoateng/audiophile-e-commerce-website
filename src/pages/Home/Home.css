@@ -14,3 +14,128 @@
     display: flex;
     align-items: flex-start;
   }
+
+  .home-container-info {
+    height: 346px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .home-container-info h4 {
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 19.12px;
+    letter-spacing: 10px;
+    font-weight: 400;
+  }
+  .home-container-info p {
+    opacity: 0.75;
+    width: 349px;
+  }
+
+  .home-btn {
+    background-color: var(--orange-background);
+  }
+  .home-btn:hover {
+    background-color: var(--orange-background-hover);
+  }
+  
+  .products {
+    width: 100%;
+    height: auto;
+    margin: 127px 0 168px 0;
+    overflow: hidden;
+  }
+  
+  .product-container {
+    max-width: 1400px;
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  /* for see products */
+
+  .speaker-Z {
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
+    overflow: hidden;
+  }
+  
+  .speaker-Z-container {
+    background: var(--orange-background);
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95vw;
+    height: 100%;
+    padding: 133px 0 124px 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 1;
+    border-radius: var(--border-radius);
+  }
+
+  .speaker-Z-container::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -30%;
+    content: "";
+    background-image: url(../../assets/home/desktop/pattern-circles.svg);
+    background-position: left center;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+  
+  .speaker-info {
+    height: 303px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .spkInfo {
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-info p {
+    width: 349px;
+    opacity: 0.75;
+  }
+  
+  .product-btn {
+    background: var(--black-background);
+    transition: var(--transition);
+  }
+  
+  .product-btn:hover {
+    transition: var(--transition);
+    background: #4c4c4c;
+  }
+  
+  .speaker-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-speaker {
+    height: 493px;
+    width: 410.23px;
+    position: absolute;
+    background-image: url(../../assets/home/desktop/image-speaker-zx9.png);
+    background-size: cover;
+  }
