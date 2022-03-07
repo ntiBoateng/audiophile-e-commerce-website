@@ -12,7 +12,19 @@ function Speaker(){
     {speakers.map((speaker, index) => {
       const { newProduct, name, slug, info, url, image } = speaker;
      
-    return
+    return(
+        <DetailsCategory
+        classInfo={`${
+          index % 2 === 1
+            ? "category-container category-container-inverse"
+            : "category-container"
+        }`}
+        newProduct={newProduct}
+        name={name}
+        info={info}
+        url={url}
+        image={
+    )
 }
 
 export default Speaker;
