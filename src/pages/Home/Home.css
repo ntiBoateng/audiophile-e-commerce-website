@@ -139,3 +139,48 @@
     background-image: url(../../assets/home/desktop/image-speaker-zx9.png);
     background-size: cover;
   }
+
+  /* for ZX7 speaker */
+  .section-Z7 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
+    overflow: hidden;
+  }
+  
+  .Z7-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95vw;
+    padding: 101px 0;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    background-image: url(../../assets/home/desktop/image-speaker-zx7.jpg);
+  }
+  .Z7-btn {
+    background: transparent;
+    border: 2px solid var(--black-background);
+    transition: var(--transition);
+    color: var(--black-background) !important;
+  }
+
+  .Z7-btn:hover {
+    border: none;
+    background: var(--black-background);
+    color: var(--white-color) !important;
+  }
+  .Z7-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 95px;
+  }
+  
+  .Z7-info h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38.25px;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
