@@ -47,3 +47,5 @@ function EarPhone(){
     </>
     );
 }
+
+export default EarPhone;
