@@ -9,10 +9,19 @@ function Home(){
             <section>
                 <section>
                     <section>
-                        <h4></h4>
-                        <h1></h1>
-                        <p></p>
-                        <Link></Link>
+                        <h4>NEW PRODUCT</h4>
+                        <h1>
+                            XX99 MARK II
+                            <br />
+                            HEADPHONES
+                        </h1>
+                        <p>
+                        Experience natural, lifelike audio and exceptional build quality
+                        made for the passionate music enthusiast.
+                        </p>
+                        <Link>
+                            SEE PRODUCT
+                        </Link>
                     </section>
                 </section>
             </section>
@@ -24,9 +33,16 @@ function Home(){
                     </div>
                     <div>
                         <div>
-                            <h1></h1>
-                            <p></p>
-                            <Link></Link>
+                            <h1>
+                                ZX9
+                                <br />
+                                SPEAKER
+                            </h1>
+                            <p>
+                                Upgrade to premium speakers that are phenomenally built to
+                                deliver truly remarkable sound.
+                            </p>
+                            <Link>SEE PRODUCT</Link>
                         </div>
                     </div>
                 </section>
@@ -34,9 +50,9 @@ function Home(){
             <section>
                 <section>
                     <article>
-                        <h2></h2>
+                        <h2>ZX7 SPEAKER</h2>
                         <Link>
-                            <button></button>
+                            <button>SEE PRODUCT</button>
                         </Link>
                     </article>
                 </section>
@@ -45,9 +61,11 @@ function Home(){
                 <section>
                     <article></article>
                     <article>
-                        <h2></h2>
+                        <h2>
+                            YX1 EARPHONES
+                        </h2>
                         <Link>
-                            <button></button>
+                            <button>SEE PRODUCT</button>
                         </Link>
                     </article>
                 </section>
