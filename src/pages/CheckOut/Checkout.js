@@ -374,25 +374,25 @@ function Checkout() {
                   <p data-aos="fade-right" data-aos-delay="300">
                     SHIPPING
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="400">
+                  <h4 data-aos="fade-left" data-aos-delay="300">
                     GH₵ 50
                   </h4>
                 </div>
                 <div className="cal">
-                  <p data-aos="fade-right" data-aos-delay="500">
+                  <p data-aos="fade-right" data-aos-delay="300">
                     VAT (INCLUDED)
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="600">
+                  <h4 data-aos="fade-left" data-aos-delay="300">
                     GH₵ {grandTotals.vatAmount}
                   </h4>
                 </div>
                 <div className="cal grand">
-                  <p data-aos="fade-right" data-aos-delay="700">
+                  <p data-aos="fade-right" data-aos-delay="300">
                     GRAND TOTAL)
                   </p>
                   <h4
                     data-aos="fade-left"
-                    data-aos-delay="800"
+                    data-aos-delay="300"
                     className="orange"
                   >
                     GH₵ {grandTotals.grandtotal}
@@ -400,7 +400,7 @@ function Checkout() {
                 </div>
                 <button
                   data-aos="fade-up"
-                  data-aos-delay="900"
+                  data-aos-delay="300"
                   className="btns orange-background"
                   style={{ width: "100%" }}
                   type="submit"

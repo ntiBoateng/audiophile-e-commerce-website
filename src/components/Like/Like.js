@@ -15,7 +15,7 @@ function Like({Products}){
                         return (
                             <article data-aos={`${
                                 index === 0? "fade-right": index === 1? "fade-up" : "fade-left"}`}
-                                data-aos-delay="200"
+                                data-aos-delay="100"
                                 className="likeInfo"
                                 key={index}>
                                 <div className="img-container">

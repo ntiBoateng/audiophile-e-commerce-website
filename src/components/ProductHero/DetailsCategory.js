@@ -28,10 +28,10 @@ function DetailsCategory({
                 <h1 data-aos="fade-up" data-aos-delay="100">
                   {name}
                 </h1>
-                <p data-aos="fade-up" data-aos-delay="200">
+                <p data-aos="fade-up" data-aos-delay="100">
                   {info}
                 </p>
-                <div data-aos="fade-up" data-aos-delay="300">
+                <div data-aos="fade-up" data-aos-delay="100">
                   {children}
                 </div>
               </div>

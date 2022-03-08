@@ -12,7 +12,7 @@ function Navs() {
     <>
       <Link
         data-aos="fade-right"
-        data-aos-delay="5000"
+        data-aos-delay="900"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
         to="/headphones"

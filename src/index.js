@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import aos from "aos";
 
 
-aos.init({ duration: 1000 });
+aos.init({ duration: 700 });
 
 ReactDOM.render(
   <React.StrictMode>
