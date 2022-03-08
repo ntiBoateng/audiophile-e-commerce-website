@@ -14,7 +14,7 @@ function ProductInfo({ Products }) {
     if (newItems) {
       const newQuantity = newItems.quantity + QuantityValue;
       const newQuantityItem = { ...newItems, quantity: newQuantity };
-      //i just wrote this, i havent understnd how it works
+      //figuring out this works later
       setCartInfo(() => {
         return CartInfo.map((x) => (x.slug === slug ? newQuantityItem : x));
       });
@@ -53,7 +53,7 @@ function ProductInfo({ Products }) {
               {description}
             </p>
             <h4 data-aos="fade-left" data-aos-delay="600">
-              ${price}
+              GH₵{price}
             </h4>
             <div
               data-aos="fade-left"
