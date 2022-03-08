@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Overlay from "./components/Overlay";
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import SingleProduct from "./pages/SingleProduct/SingleProducts";
 import EarPhone from "./pages/EarPhone";
 import HeadPhone from "./pages/HeadPhone";
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Overlay />
-      <Routes>
+      <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/speakers" component={Speaker} />
         <Route exact path="/speakers/:slug" component={SingleProduct} />
@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/headphones/:slug" component={SingleProduct} />
         <Route component={Error} />
-      </Routes>
+      </Switch>
       <Footer />
     </>
   );

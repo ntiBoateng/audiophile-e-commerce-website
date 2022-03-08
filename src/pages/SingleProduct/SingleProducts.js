@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
-import { useNavigate, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import CategoryNavigation from "../../components/CategoryNavigation";
 import BestGear from "../../components/BestGear";
 import ProductInfo from "../../components/ProductCategory/ProductInfo";
@@ -17,7 +17,7 @@ function SingleProduct() {
   //get the getProduct from context
   const { getProduct } = useGlobalContext();
 
-  let history = useNavigate();
+  let history = useHistory();
 
   let Products = getProduct(slug);
   if (!Products) {
