@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
 import GoBack from "../../components/GoBack";
-import { useHistory, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import NoError from "../../components/NoError";
 import { useForm } from "react-hook-form";
-import check from "../../assets/cart/iconmonstr-check-mark-circle-thin.svg";
+//import check from "../../assets/cart/iconmonstr-check-mark-circle-thin.svg";
 
 function Checkout() {
-  const history = useHistory();
+  const history = useNavigate();
 
-  const { CartInfo, setCartInfo, getTotals, grandTotals, isView, setIsView } =
-    useGlobalContext();
+  const { CartInfo, setCartInfo, getTotals, grandTotals, isView, setIsView } = useGlobalContext();
 
   const [results, setresults] = useState(false);
-
+ 
   const [result, setresult] = useState("");
 
   //useForm Properties
@@ -178,7 +177,7 @@ function Checkout() {
                         <label
                           className={`${errors.zipcode && "errorLabel"}`}
                           htmlFor="code"
-                        >
+                        >    
                           ZIP Code
                         </label>
                         {errors.zipcode && <p>{errors.zipcode.message}</p>}
