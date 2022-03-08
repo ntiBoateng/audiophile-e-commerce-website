@@ -31,7 +31,7 @@ function Cart() {
                 </div>
                 <div className="cartitems">
                   <p>{newName[0]}</p>
-                  <p>${price}</p>
+                  <p>GH₵{price}</p>
                 </div>
               </div>
               <div className="buttonContainer">
@@ -55,7 +55,7 @@ function Cart() {
 
         <div className="cartFooter">
           <h5 className="cartAlike">Total</h5>
-          <h5>${getTotals()}</h5>
+          <h5>GH₵{getTotals()}</h5>
         </div>
         <Link
           onClick={() => setIsCartOpen(false)}

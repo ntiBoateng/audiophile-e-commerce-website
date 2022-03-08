@@ -5,7 +5,7 @@ function SocialMedia({ classed }) {
   return (
     <section className={classed}>
       <Link
-        to={{ pathname: "https://web.facebook.com/ayomide.bamigboye.758" }}
+        to={{ pathname: "https://m.facebook.com/AmalitechgGmbH/" }}
         target="_blank"
         className="facebook media"
       >
@@ -18,7 +18,7 @@ function SocialMedia({ classed }) {
         </svg>
       </Link>
       <Link
-        to={{ pathname: "https://twitter.com/bamigboyeayomi5" }}
+        to={{ pathname: "https://twitter.com/AmaliTech_gGmbh?t=Fih9PGXHAUwA5-OReRJ3_A&s=08" }}
         target="_blank"
         className="twitter media"
       >
@@ -31,7 +31,7 @@ function SocialMedia({ classed }) {
         </svg>
       </Link>
       <Link
-        to={{ pathname: "https://www.instagram.com/it_haywhy" }}
+        to={{ pathname: "https://www.instagram.com/amalitech_ggmbh/?hl=en" }}
         target="_blank"
         className="instagram media"
       >

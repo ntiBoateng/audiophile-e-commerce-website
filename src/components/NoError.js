@@ -8,7 +8,7 @@ function NoError({ title }) {
         <h1 data-aos="fade-left">{title}</h1>
         <Link
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
           to="/"
           className="btns orange-background"
         >

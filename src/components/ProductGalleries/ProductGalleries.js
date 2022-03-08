@@ -23,7 +23,7 @@ function ProductGalleries({ Products }) {
           </div>
           <div
             data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos-delay="100"
             className="gallery-img"
           >
             <img

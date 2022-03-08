@@ -10,18 +10,18 @@ function Home(){
                 <section className="home-container">
                     <section className="home-container-info">
                         <h4 data-aos="fade-left" data-aos-delay="200">NEW PRODUCT</h4>
-                        <h1 data-aos="fade-left" data-aos-delay="400">
+                        <h1 data-aos="fade-left" data-aos-delay="200">
                             XX99 MARK II
                             <br />
                             HEADPHONES
                         </h1>
-                        <p data-aos="fade-left" data-aos-delay="600">
+                        <p data-aos="fade-left" data-aos-delay="200">
                         Experience natural, lifelike audio and exceptional build quality
                         made for the passionate music enthusiast.
                         </p>
                         <Link
                             data-aos="fade-left"
-                            data-aos-delay="800"
+                            data-aos-delay="300"
                             className="home-btn btns"
                             to="/headphones/xx99-mark-two-headphones"
                             >
@@ -58,7 +58,7 @@ function Home(){
                         <h2 data-aos="fade-right" data-aos-delay="200">ZX7 SPEAKER</h2>
                         <Link to="/speakers/zx7-speaker">
                             <button data-aos="fade-right" 
-                            data-aos-delay="400" 
+                            data-aos-delay="200" 
                             className="btns Z7-btn">SEE PRODUCT</button>
                         </Link>
                     </article>
@@ -74,7 +74,7 @@ function Home(){
                         <Link 
                             to="/earphones/yx1-earphones"
                             data-aos="fade-left"
-                            data-aos-delay="400">
+                            data-aos-delay="200">
                             <button className="btns earphone-btn">SEE PRODUCT</button>
                         </Link>
                     </article>

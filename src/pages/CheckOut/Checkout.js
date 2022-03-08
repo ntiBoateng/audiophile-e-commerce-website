@@ -353,7 +353,7 @@ function Checkout() {
                         </div>
                         <div className="cartitems">
                           <p>{newName[0]}</p>
-                          <p>${price}</p>
+                          <p>GH₵{price}</p>
                         </div>
                       </div>
                       <div className="qtyContainer">
@@ -367,40 +367,40 @@ function Checkout() {
                     TOTAL
                   </p>
                   <h4 data-aos="fade-left" data-aos-delay="200">
-                    $ {getTotals()}
+                    GH₵ {getTotals()}
                   </h4>
                 </div>
                 <div className="cal">
                   <p data-aos="fade-right" data-aos-delay="300">
                     SHIPPING
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="400">
-                    $ 50
+                  <h4 data-aos="fade-left" data-aos-delay="300">
+                    GH₵ 50
                   </h4>
                 </div>
                 <div className="cal">
-                  <p data-aos="fade-right" data-aos-delay="500">
+                  <p data-aos="fade-right" data-aos-delay="300">
                     VAT (INCLUDED)
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="600">
-                    $ {grandTotals.vatAmount}
+                  <h4 data-aos="fade-left" data-aos-delay="300">
+                    GH₵ {grandTotals.vatAmount}
                   </h4>
                 </div>
                 <div className="cal grand">
-                  <p data-aos="fade-right" data-aos-delay="700">
+                  <p data-aos="fade-right" data-aos-delay="300">
                     GRAND TOTAL)
                   </p>
                   <h4
                     data-aos="fade-left"
-                    data-aos-delay="800"
+                    data-aos-delay="300"
                     className="orange"
                   >
-                    $ {grandTotals.grandtotal}
+                    GH₵ {grandTotals.grandtotal}
                   </h4>
                 </div>
                 <button
                   data-aos="fade-up"
-                  data-aos-delay="900"
+                  data-aos-delay="300"
                   className="btns orange-background"
                   style={{ width: "100%" }}
                   type="submit"
@@ -444,7 +444,7 @@ function Checkout() {
                           </div>
                           <div className="cartitems">
                             <p>{newName[0]}</p>
-                            <p>${price}</p>
+                            <p>GH₵{price}</p>
                           </div>
                           <div className="qtyContainer">
                             <p>x{quantity}</p>
@@ -464,7 +464,7 @@ function Checkout() {
                       </div>
                       <div className="cartitems">
                         <p>{CartInfo[0].name.split(" Headphones")}</p>
-                        <p>${CartInfo[0].price}</p>
+                        <p>GH₵{CartInfo[0].price}</p>
                       </div>
                       <div className="qtyContainer">
                         <p>x{CartInfo[0].quantity}</p>
@@ -485,7 +485,7 @@ function Checkout() {
               <div className="grandingTotal">
                 <div className="priceInformation">
                   <h4>Grand Total</h4>
-                  <h4>$ {grandTotals.grandtotal}</h4>
+                  <h4>GH₵ {grandTotals.grandtotal}</h4>
                 </div>
               </div>
             </article>
