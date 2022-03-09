@@ -57,7 +57,7 @@ function Navbar() {
         </section>
 
         <section onClick={() => setIsCartOpen(!isCartOpen)} className="cart">
-          <img src={cartIcon} alt="Cart-Image" />
+          <img src={cartIcon} alt="Cart-Imag" />
           <p onClick={() => setIsCartOpen(!isCartOpen)} className="amount">
             {CartInfo.length}
           </p>

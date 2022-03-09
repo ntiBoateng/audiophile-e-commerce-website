@@ -4,7 +4,7 @@ import { useHistory, Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import NoError from "../../components/NoError";
 import { useForm } from "react-hook-form";
-import check from "../../assets/cart/iconmonstr-check-mark-circle-thin.svg";
+//import check from "../../assets/cart/iconmonstr-check-mark-circle-thin.svg";
 
 function Checkout() {
   const history = useHistory();
@@ -14,7 +14,8 @@ function Checkout() {
 
   const [results, setresults] = useState(false);
 
-  const [result, setresult] = useState("");
+  //removed "result"
+  const [ setresult] = useState("");
 
   //useForm Properties
   const {
@@ -27,8 +28,9 @@ function Checkout() {
   } = useForm();
 
   useEffect(() => {
+    // eslint-disable-next-line
     setFocus("name");
-  }, []);
+  });
 
   //getting data value
   const onSubmit = (data) => {

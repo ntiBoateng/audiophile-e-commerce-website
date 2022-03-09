@@ -35,6 +35,7 @@ const getwindowsDimension = () => {
       if (getWidth > 768 && isNavOpen === true) {
         setIsNavOpen(false);
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [getWidth]);
   
     useEffect(() => {
@@ -121,6 +122,7 @@ const getwindowsDimension = () => {
       localStorage.setItem("cart", JSON.stringify(CartInfo));
       getTotals();
       grandTotal();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [CartInfo]);
   
     return (
