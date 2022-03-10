@@ -59,9 +59,9 @@ function CategoryNavigation(){
                             <img src={earphone} alt="EarPhones"/>
                         </div>
                     </div>
-                    <div className="homeCateoryInfo">
+                    <div className="homeCategoryInfo">
                         <h3>EarPhones</h3>
-                        <div>
+                        <div className="mobileCategorySection">
                             <p>
                                 Shop now
                                 <span>
