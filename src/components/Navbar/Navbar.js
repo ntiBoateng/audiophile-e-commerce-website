@@ -13,7 +13,7 @@ function Navbar() {
     setIsCartOpen,
     isView,
     isCartOpen,
-    CartInfo,
+    //CartInfo,
   } = useGlobalContext();
 
   return (
@@ -58,9 +58,13 @@ function Navbar() {
 
         <section onClick={() => setIsCartOpen(!isCartOpen)} className="cart">
           <img src={cartIcon} alt="Cart-Imag" />
-          <p onClick={() => setIsCartOpen(!isCartOpen)} className="amount">
-            {CartInfo.length}
-          </p>
+
+          
+            
+          
+         
+
+
         </section>
 
         <section

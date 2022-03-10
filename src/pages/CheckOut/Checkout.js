@@ -14,8 +14,8 @@ function Checkout() {
 
   const [results, setresults] = useState(false);
 
-  //removed "result"
-  const [ setresult] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [result, setresult] = useState("");
 
   //useForm Properties
   const {
@@ -28,9 +28,9 @@ function Checkout() {
   } = useForm();
 
   useEffect(() => {
-    // eslint-disable-next-line
     setFocus("name");
-  });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   //getting data value
   const onSubmit = (data) => {
@@ -355,7 +355,7 @@ function Checkout() {
                         </div>
                         <div className="cartitems">
                           <p>{newName[0]}</p>
-                          <p>GH₵{price}</p>
+                          <p>${price}</p>
                         </div>
                       </div>
                       <div className="qtyContainer">
@@ -368,33 +368,33 @@ function Checkout() {
                   <p data-aos="fade-right" data-aos-delay="100">
                     TOTAL
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="200">
-                    GH₵ {getTotals()}
+                  <h4 data-aos="fade-left" data-aos-delay="100">
+                  GH₵ {getTotals()}
                   </h4>
                 </div>
                 <div className="cal">
-                  <p data-aos="fade-right" data-aos-delay="300">
+                  <p data-aos="fade-right" data-aos-delay="100">
                     SHIPPING
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="300">
-                    GH₵ 50
+                  <h4 data-aos="fade-left" data-aos-delay="100">
+                  GH₵ 50
                   </h4>
                 </div>
                 <div className="cal">
-                  <p data-aos="fade-right" data-aos-delay="300">
+                  <p data-aos="fade-right" data-aos-delay="100">
                     VAT (INCLUDED)
                   </p>
-                  <h4 data-aos="fade-left" data-aos-delay="300">
-                    GH₵ {grandTotals.vatAmount}
+                  <h4 data-aos="fade-left" data-aos-delay="100">
+                  GH₵ {grandTotals.vatAmount}
                   </h4>
                 </div>
                 <div className="cal grand">
-                  <p data-aos="fade-right" data-aos-delay="300">
+                  <p data-aos="fade-right" data-aos-delay="100">
                     GRAND TOTAL)
                   </p>
                   <h4
                     data-aos="fade-left"
-                    data-aos-delay="300"
+                    data-aos-delay="100"
                     className="orange"
                   >
                     GH₵ {grandTotals.grandtotal}
@@ -402,7 +402,7 @@ function Checkout() {
                 </div>
                 <button
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="100"
                   className="btns orange-background"
                   style={{ width: "100%" }}
                   type="submit"
@@ -446,7 +446,7 @@ function Checkout() {
                           </div>
                           <div className="cartitems">
                             <p>{newName[0]}</p>
-                            <p>GH₵{price}</p>
+                            <p>GH₵ {price}</p>
                           </div>
                           <div className="qtyContainer">
                             <p>x{quantity}</p>
@@ -466,7 +466,7 @@ function Checkout() {
                       </div>
                       <div className="cartitems">
                         <p>{CartInfo[0].name.split(" Headphones")}</p>
-                        <p>GH₵{CartInfo[0].price}</p>
+                        <p>GH₵ {CartInfo[0].price}</p>
                       </div>
                       <div className="qtyContainer">
                         <p>x{CartInfo[0].quantity}</p>

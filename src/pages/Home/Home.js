@@ -9,19 +9,19 @@ function Home(){
             <section className="section-home">
                 <section className="home-container">
                     <section className="home-container-info">
-                        <h4 data-aos="fade-left" data-aos-delay="200">NEW PRODUCT</h4>
-                        <h1 data-aos="fade-left" data-aos-delay="200">
+                        <h4 data-aos="fade-left" data-aos-delay="100">NEW PRODUCT</h4>
+                        <h1 data-aos="fade-left" data-aos-delay="100">
                             XX99 MARK II
                             <br />
                             HEADPHONES
                         </h1>
-                        <p data-aos="fade-left" data-aos-delay="200">
+                        <p data-aos="fade-left" data-aos-delay="100">
                         Experience natural, lifelike audio and exceptional build quality
                         made for the passionate music enthusiast.
                         </p>
                         <Link
                             data-aos="fade-left"
-                            data-aos-delay="300"
+                            data-aos-delay="100"
                             className="home-btn btns"
                             to="/headphones/xx99-mark-two-headphones"
                             >
@@ -55,10 +55,10 @@ function Home(){
             <section className="section-Z7">
                 <section className="Z7-container">
                     <article data-aos="fade-left" className="Z7-info">
-                        <h2 data-aos="fade-right" data-aos-delay="200">ZX7 SPEAKER</h2>
+                        <h2 data-aos="fade-right" data-aos-delay="100">ZX7 SPEAKER</h2>
                         <Link to="/speakers/zx7-speaker">
                             <button data-aos="fade-right" 
-                            data-aos-delay="200" 
+                            data-aos-delay="100" 
                             className="btns Z7-btn">SEE PRODUCT</button>
                         </Link>
                     </article>
@@ -68,13 +68,13 @@ function Home(){
                 <section className="earphone-Z-container">
                     <article data-aos="fade-down" className="Z-earphone"></article>
                     <article data-aos="fade-up" className="earphone-container-info">
-                        <h2 data-aos="fade-left" data-aos-delay="200">
+                        <h2 data-aos="fade-left" data-aos-delay="100">
                             YX1 EARPHONES
                         </h2>
                         <Link 
                             to="/earphones/yx1-earphones"
                             data-aos="fade-left"
-                            data-aos-delay="200">
+                            data-aos-delay="100">
                             <button className="btns earphone-btn">SEE PRODUCT</button>
                         </Link>
                     </article>
