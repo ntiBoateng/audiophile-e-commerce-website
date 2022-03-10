@@ -76,7 +76,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="Alexei ward"
+                        placeholder="Prince Gideon NDri"
                         type="text"
                         id="name"
                         {...register("name", {
@@ -97,7 +97,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="alexei@mail.com"
+                        placeholder="princekoffi@mail.com"
                         type="text"
                         id="email"
                         {...register("email", {
@@ -125,7 +125,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="+1 202-555-0136"
+                        placeholder="+233 24-345-7439"
                         type="text"
                         id="phone"
                         {...register("phone", {
@@ -187,7 +187,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="New York"
+                        placeholder="New York or 00233"
                         type="text"
                         id="code"
                         {...register("zipcode", {
@@ -208,7 +208,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="alexei@mail.com"
+                        placeholder="Takoradi"
                         type="text"
                         id="city"
                         {...register("city", {
@@ -231,7 +231,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="United Kingdom"
+                        placeholder="Ghana"
                         type="text"
                         id="country"
                         {...register("country", {
