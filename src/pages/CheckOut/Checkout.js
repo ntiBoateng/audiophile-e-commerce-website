@@ -97,7 +97,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="princekoffi@mail.com"
+                        placeholder="justicekoffi@gmail.com"
                         type="text"
                         id="email"
                         {...register("email", {
@@ -160,7 +160,7 @@ function Checkout() {
                       </div>
                       <input
                         autoComplete="off"
-                        placeholder="10001"
+                        placeholder="10001 Amalitech Avenue"
                         type="text"
                         id="address"
                         {...register("address", {
